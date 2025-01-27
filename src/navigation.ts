@@ -1,4 +1,3 @@
-
 export const headerData = {
   links: [
     {
@@ -30,7 +29,7 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: '', href:'/terms' },
+    { text: '', href: '/terms' },
     { text: '', href: '/privacy' },
   ],
   socialLinks: [

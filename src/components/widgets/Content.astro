@@ -28,19 +28,21 @@ const {
   isDark={isDark}
   containerClass={`max-w-7xl mx-auto ${isAfterContent ? 'pt-0 md:pt-0 lg:pt-0' : ''} ${classes?.container ?? ''}`}
 >
-<div class="relative m-auto max-w-4xl">
-  {typeof image === 'string' ? (
-    <Fragment set:html={image} />
-  ) : (
-    <img
-      class="mx-auto w-4/5 rounded-lg mb-5"
-      width={500}
-      height={500}
-      sizes="(max-width: 768px) 100vw, 432px"
-      src="/logo2.png"
-    />
-  )}
-</div>
+  <div class="relative m-auto max-w-4xl">
+    {
+      typeof image === 'string' ? (
+        <Fragment set:html={image} />
+      ) : (
+        <img
+          class="mx-auto w-4/5 rounded-lg mb-5"
+          width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, 432px"
+          src="/logo2.png"
+        />
+      )
+    }
+  </div>
   <Headline
     title={title}
     subtitle={subtitle}

@@ -5,7 +5,6 @@ import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
-
 const metadata = {
   title: 'DECA Conveyor Solutions — Experts in Conveyor Installation, Repair, and Maintenance',
   ignoreTitleTemplate: true,
@@ -28,15 +27,17 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Welcome to <span class="text-orange-400 "> DECA</span>
+      Welcome to <span class="text-orange-400"> DECA</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="block mb-1 font-bold text-orange-400">Experts in Conveyor Installation, Repair, and Maintenance</span>
-      We keep your business moving! Specializing in conveyor systems, we provide top-tier installation, repair, and maintenance services to ensure your operations run smoothly and efficiently.
+      <span class="block mb-1 font-bold text-orange-400">Experts in Conveyor Installation, Repair, and Maintenance</span
+      >
+      We keep your business moving! Specializing in conveyor systems, we provide top-tier installation, repair, and maintenance
+      services to ensure your operations run smoothly and efficiently.
     </Fragment>
   </Hero>
-  
+
   <!-- Features Widget *************** -->
 
   <Features
@@ -53,8 +54,7 @@ const metadata = {
       },
       {
         title: 'Customized Maintenance Plans',
-        description:
-          'Tailored solutions to meet your unique operational requirements and budget.',
+        description: 'Tailored solutions to meet your unique operational requirements and budget.',
         icon: 'tabler:adjustments',
       },
       {
@@ -65,8 +65,7 @@ const metadata = {
       },
       {
         title: 'Proven Track Record',
-        description:
-          'A history of successful projects with satisfied clients across multiple industries.',
+        description: 'A history of successful projects with satisfied clients across multiple industries.',
         icon: 'tabler:circle-dashed-check',
       },
     ]}
@@ -75,15 +74,14 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-  id="content"
+    id="content"
     isReversed
     tagline=""
     title=""
     items={[
       {
         title: 'Integrity',
-        description:
-          'We believe in transparent, honest communication and always delivering on our promises.',
+        description: 'We believe in transparent, honest communication and always delivering on our promises.',
       },
       {
         title: 'Excellence',
@@ -108,31 +106,30 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Our Mission</h3>
-      At DECA, we deliver exceptional conveyor system solutions to drive efficiency and reliability while minimizing downtime. With innovation, precision, and dedicated service, we strive to exceed expectations and be the trusted partner for businesses relying on conveyor systems.    
+      At DECA, we deliver exceptional conveyor system solutions to drive efficiency and reliability while minimizing downtime.
+      With innovation, precision, and dedicated service, we strive to exceed expectations and be the trusted partner for
+      businesses relying on conveyor systems.
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
   <Features2
-    id='contact'
+    id="contact"
     title="Contact Us"
     tagline=""
     columns={2}
     items={[
       {
         title: 'Angel de Leon CEO',
-        description:
-          '(956) 342-3137',
+        description: '(956) 342-3137',
         icon: 'tabler:user',
       },
       {
         title: 'Mailing Address',
-        description:
-          'P.O. Box 802N 78540 Edinburg, TX',
+        description: 'P.O. Box 802N 78540 Edinburg, TX',
         icon: 'tabler:map-pin',
       },
     ]}
   />
-
 </Layout>
