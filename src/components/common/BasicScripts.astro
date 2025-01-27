@@ -11,16 +11,13 @@ import { UI } from 'astrowind:config';
 
   function applyTheme(theme) {
     if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add('light');
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove('light');
     }
   }
 
   const initTheme = function () {
-    
-    const defaultTheme = typeof defaultTheme !== 'undefined' ? defaultTheme : 'light';
-
     if ((defaultTheme && defaultTheme.endsWith(':only')) || (!localStorage.theme && defaultTheme !== 'system')) {
       applyTheme(defaultTheme.replace(':only', ''));
     } else if (
