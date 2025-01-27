@@ -18,6 +18,9 @@ import { UI } from 'astrowind:config';
   }
 
   const initTheme = function () {
+    
+    const defaultTheme = typeof defaultTheme !== 'undefined' ? defaultTheme : 'light';
+
     if ((defaultTheme && defaultTheme.endsWith(':only')) || (!localStorage.theme && defaultTheme !== 'system')) {
       applyTheme(defaultTheme.replace(':only', ''));
     } else if (

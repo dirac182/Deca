@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: Deca - Conveyor Solutions
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Experts in Conveyor Installation, Repair, and Maintenance"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Deca - Conveyor Solutions
     images:
       - url: '~/assets/images/default.png'
         width: 1200
