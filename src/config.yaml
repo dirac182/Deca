@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Deca - Conveyor Solutions
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Deca - Conveyor Solutions
-    template: '%s — AstroWind'
+    template: ''
   description: "Experts in Conveyor Installation, Repair, and Maintenance"
   robots:
     index: true

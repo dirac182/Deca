@@ -12,8 +12,11 @@ export const headerData = {
       text: 'Our Mission',
       href: '#content',
     },
+    {
+      text: 'Contact Us',
+      href: '#content',
+    },
   ],
-  actions: [{ text: 'Contact Us', href: '#contact' }],
 };
 
 export const footerData = {
@@ -27,14 +30,5 @@ export const footerData = {
         { text: 'Contact Us', href: '#contact' },
       ],
     },
-  ],
-  secondaryLinks: [
-    { text: '', href: '/terms' },
-    { text: '', href: '/privacy' },
-  ],
-  socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
 };
